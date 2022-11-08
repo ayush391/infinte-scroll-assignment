@@ -10,7 +10,7 @@ const Navbar = () => {
 
     const context = useContext(AppContext);
 
-    const { userAuth, setUserAuth } = context
+    const { userAuth } = context
 
     return (
         <div>

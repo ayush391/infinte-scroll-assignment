@@ -1,25 +1,21 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect } from 'react'
 import InfiniteScroll from 'react-infinite-scroll-component';
-import { Link } from 'react-router-dom';
 import AppContext from '../context/appContext';
 
-import Skeleton from 'react-loading-skeleton'
-import 'react-loading-skeleton/dist/skeleton.css'
 
 
 // import './style/home.css'
 import Card from './Card';
 import CardSkeleton from './CardSkeleton';
-import LoginBtn from './LoginBtn';
 
 const Dashboard = () => {
 
     const context = useContext(AppContext);
 
     //stores user login status
-    const { userAuth, people, getPeople } = context
+    const { people, getPeople } = context
 
-    useEffect(() => { getPeople() }, [])
+    useEffect(() => { getPeople() })
 
 
     //check whether user is logged in or not

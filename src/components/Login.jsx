@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import AppContext from '../context/appContext';
 
 import './style/login.css'
@@ -33,7 +33,7 @@ const Login = () => {
         if (userAuth) {
             navigate('/home');
         }
-    }, [])
+    })
 
     return (
         <div className='container'>

@@ -1,6 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import { useState, useContext } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import './App.css'
