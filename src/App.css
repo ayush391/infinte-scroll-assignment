@@ -8,6 +8,8 @@
   /* IE and Edge */
   scrollbar-width: none;
   /* Firefox */
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -17,4 +19,32 @@ body {
 
 .nav-bg {
   background-color: #2f334a;
+}
+
+.login-btn {
+  padding: 0.5rem 0.8rem;
+  border-radius: 1rem;
+  background-color: #4faf63;
+  color: white;
+}
+
+.logout-btn {
+  padding: 0.5rem 0.8rem;
+  border-radius: 1rem;
+  background-color: #ef7064;
+  color: white;
+}
+
+.login-btn:hover {
+  padding: 0.5rem 0.8rem;
+  border-radius: 1rem;
+  background-color: #63da7d88;
+  color: white;
+}
+
+.logout-btn:hover {
+  padding: 0.5rem 0.8rem;
+  border-radius: 1rem;
+  background-color: #ff7366ae;
+  color: white;
 }

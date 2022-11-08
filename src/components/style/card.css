@@ -1,8 +1,11 @@
 .card-container {
-    background-color: #71d38530;
+    background-color: #71d38543;
     /* background-color: #ef6f6430; */
     margin: 2rem;
     display: flex;
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
     justify-content: center;
     border-radius: 1rem;
 
@@ -31,6 +34,8 @@
     /* color: #ef6f64; */
     /* color: #8e5ebc; */
     margin: 1rem;
-    white-space: nowrap;
+    white-space: normal;
+    text-align: center;
     font-weight: 800;
+    font-size: 1rem;
 }

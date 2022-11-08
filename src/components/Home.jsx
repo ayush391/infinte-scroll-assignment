@@ -10,6 +10,8 @@ import 'react-loading-skeleton/dist/skeleton.css'
 // import './style/home.css'
 import Card from './Card';
 import CardSkeleton from './CardSkeleton';
+import LoginBtn from './LoginBtn';
+import Dashboard from './Dashboard';
 
 const Home = () => {
 
@@ -22,34 +24,19 @@ const Home = () => {
 
 
     //check whether user is logged in or not
-    if (userAuth) {
+    if (!userAuth) {
         return (
             <div className='container'>
-                <InfiniteScroll
-                    dataLength={people.length}
-                    next={getPeople}
-                    hasMore={true}
-                    loader={<CardSkeleton />}
-
-                >
-                    <div className='row justify-content-center'>
-
-                        {people.map((person, index) => {
-                            return (
-                                <Card id={index} img={person.picture.large} title={person.name.title} first={person.name.first} last={person.name.last}></Card>
-                            )
-                        })}
-                    </div>
-                </InfiniteScroll>
+                <div className='login-form'>
+                    <h5 className='login-form-heading'>Please login to view this page</h5><LoginBtn></LoginBtn>
+                </div>
             </div>
         )
     }
 
     else {
         return (
-            <div className='container'>
-                <h2>Please Login First</h2><Link to='/login' className='btn btn-danger'>Go to Login</Link>
-            </div>
+            <Dashboard></Dashboard>
         )
     }
 
