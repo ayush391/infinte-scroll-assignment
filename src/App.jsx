@@ -9,17 +9,20 @@ import Navbar from './components/Navbar';
 
 import AppState from './context/appState'
 
+//for deploying on gh pages
+const basePath = 'infinte-scroll-assignment'
+
 function App() {
 
   return (
     <>
       <AppState>
-        <BrowserRouter>
+        <BrowserRouter basename={basePath}>
           <Navbar></Navbar>
           <Routes>
-            <Route exact path='/' element={<Login />} />
-            <Route exact path='/login' element={<Login />} />
-            <Route exact path='/home' element={<Home />} />
+            <Route path='/' element={<Login />} />
+            <Route path='/login' element={<Login />} />
+            <Route path='/home' element={<Home />} />
           </Routes>
         </BrowserRouter>
       </AppState>
