@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import './App.css'
 import Home from './components/Home'
@@ -17,14 +17,14 @@ function App() {
   return (
     <>
       <AppState>
-        <BrowserRouter basename={basePath}>
+        <HashRouter>
           <Navbar></Navbar>
           <Routes>
             <Route path='/' element={<Login />} />
             <Route path='/login' element={<Login />} />
             <Route path='/home' element={<Home />} />
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </AppState>
     </>
   )
