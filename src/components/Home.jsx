@@ -9,9 +9,7 @@ const Home = () => {
     const context = useContext(AppContext);
 
     //stores user login status
-    const { userAuth, getPeople } = context
-
-    useEffect(() => { getPeople() })
+    const { userAuth } = context
 
 
     //check whether user is logged in or not

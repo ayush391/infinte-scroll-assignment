@@ -15,7 +15,7 @@ const Dashboard = () => {
     //stores user login status
     const { people, getPeople } = context
 
-    useEffect(() => { getPeople() })
+    useEffect(() => { getPeople() }, [])
 
 
     //check whether user is logged in or not
