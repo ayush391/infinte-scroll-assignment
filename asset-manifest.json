@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/infinte-scroll-assignment/static/css/main.ecc3c386.css",
-    "main.js": "/infinte-scroll-assignment/static/js/main.116df478.js",
+    "main.js": "/infinte-scroll-assignment/static/js/main.c96f287e.js",
     "index.html": "/infinte-scroll-assignment/index.html",
     "main.ecc3c386.css.map": "/infinte-scroll-assignment/static/css/main.ecc3c386.css.map",
-    "main.116df478.js.map": "/infinte-scroll-assignment/static/js/main.116df478.js.map"
+    "main.c96f287e.js.map": "/infinte-scroll-assignment/static/js/main.c96f287e.js.map"
   },
   "entrypoints": [
     "static/css/main.ecc3c386.css",
-    "static/js/main.116df478.js"
+    "static/js/main.c96f287e.js"
   ]
 }
