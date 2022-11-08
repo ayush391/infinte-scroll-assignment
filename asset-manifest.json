@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/infinte-scroll-assignment/static/css/main.ecc3c386.css",
-    "main.js": "/infinte-scroll-assignment/static/js/main.cc30029e.js",
-    "index.html": "/infinte-scroll-assignment/index.html",
-    "main.ecc3c386.css.map": "/infinte-scroll-assignment/static/css/main.ecc3c386.css.map",
-    "main.cc30029e.js.map": "/infinte-scroll-assignment/static/js/main.cc30029e.js.map"
+    "main.css": "./static/css/main.ecc3c386.css",
+    "main.js": "./static/js/main.cc30029e.js",
+    "index.html": "./index.html",
+    "main.ecc3c386.css.map": "./static/css/main.ecc3c386.css.map",
+    "main.cc30029e.js.map": "./static/js/main.cc30029e.js.map"
   },
   "entrypoints": [
     "static/css/main.ecc3c386.css",
